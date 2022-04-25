@@ -1,5 +1,6 @@
 function Inverso (STR){
   let reverse = '';
+  debugger;
   for(char of STR){
     reverse = char + reverse;
   }
@@ -8,11 +9,11 @@ function Inverso (STR){
 
 $(function(){
   $("#bnt").click(function(){
-    const teste = Inverso($("#teste").val());
+    const teste = Inverso($("#texto").val());
     $("#resultado").html(teste)  ;
   }); 
   $("#bnt").click(function(){
-    let teste2 = $("#teste").val();
+    let teste2 = $("#texto").val();
     teste2 = teste2.split('').reverse().join('');   
     $("#resultado2").html(teste2);
   })
